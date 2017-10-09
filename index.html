@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    <script src="script/affix.js"></script>
+    
+    <title>Alamutar</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-md navbar-light align-items-baseline justify-content-center flex-wrap fixed-top pos-relative border-bottom p-0"  style="height: 140px;" >
+      <div class="w-100 h-100 pos-absolute" style="z-index: 1; background-image: url(static/images/woodOak.png); background-size: 140px; top: 0; left: 0;">
+      </div>
+      <div class="navbar-brand pos-relative m-0 h-100 justify-content-center" style="padding: 0 35px;">
+        <img class="pos-absolute banner" style="left: -381px; z-index: 1;" src="static/videos/banner.gif" alt="Banner" />
+        <img class="pos-absolute banner flip-vert" style="left: 646px; z-index: 1;" src="static/videos/banner.gif" alt="Banner" />
+        <img id="painting" class="pos-absolute border border-dark border-top-0" src="static/images/painting.png" alt="Painting" />
+        <div class="pos-absolute frame" style="left: -161px; z-index: 1;" >
+          <img class="mb-3 torch" src="static/videos/torch.gif" alt="Torch" />
+        </div>
+        <div class="pos-absolute frame" style="left: 463px; z-index: 1;" >
+          <img class="mb-3 torch" src="static/videos/torch.gif" alt="Torch" />
+        </div>
+        <a class="d-inline-block text-stretch undecorated-link pos-relative" style="z-index: 2; height: 90px; margin-top: 32px;" href="#">
+          <img class="h-75" src="static/images/title.png" alt="Alamutar" />
+        </a>
+      </div>
+      <div class="pos-relative container-fluid" >
+        <div class="navbar-collapse pos-relative w-100" id="navbarNavAltMarkup">
+          <div class="navbar-nav pos-relative container w-75 justify-content-center p-0">
+            <div class="border-left border-right row rounded pos-relative m-0 w-100 justify-content-around" data-toggle="affix" data-offset-top="108" style="border-width: 4px; border-color: #443323; background-image: url(static/images/woodSpruce.png);">
+              <div class="chain pos-absolute" style="left: 0;">
+              </div>
+              <a class="navbar-navigator nav-item nav-link heading col-sm-12 col-md-auto text-center" href="#">Blog</a>
+              <a class="navbar-navigator nav-item nav-link heading col-sm-12 col-md-auto text-center" href="#">Classes &amp; Skills</a>
+              <a class="navbar-navigator nav-item nav-link heading col-sm-12 col-md-auto text-center" href="#">Statistics</a>
+              <div class="chain pos-absolute" style="right: 0;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="container-fluid p-0 d-flex flex-wrap flex-row pos-relative">
+      <div class="w-100 row m-0" style="height: 900px;">
+        <div class="col pos-relative d-flex justify-content-center align-items-center p-0" style="overflow: hidden;">
+          <div class="w-100 h-100 pos-absolute" style="min-height: 100%; top: 0; left: 0;"></div>
+          <video class="background-video" id="homepageVideo" muted autoplay loop>
+            <source src="static/videos/background.mp4" type="video/mp4">
+            Video not supported
+          </video>
+        </div>
+      </div>
+      <input type="checkbox" name="hidden" id="toggleInfo" style="display: none;" />
+      <div id="infoFloater" class="d-flex flex-row pos-absolute">
+        <span class="pos-absolute" style="top: 0; left: -128px; height: 100%; width: 128px; background-image: url(static/images/piston-head.png); background-size: auto 33.5%; background-repeat: repeat-y; background-position: right top;">
+        </span>
+        <div id="infoFloaterContent" class="p-4 heading border-left-0 border-right-0 d-flex flex-column">
+          <span class="d-flex flex-row flex-nowrap p-1 m-1 justify-content-center">
+            <p class="m-0">IP:</p><p id="ip" class="m-0">82.192.34.91</p>
+          </span>
+          <div class="d-flex flex-column flex-nowrap p-1 m-1 justify-content-center">
+            <p class="m-auto">Conquest installer:</p>
+            <form class="form-download" method="post" action="static/download/MinecraftConquestInstaller.jar" style="width: 100%;">
+               <button type="submit" class="btn btn-success btn-block btn-lg p-1">Download!</button>
+            </form>
+          </div>
+          <span class="d-flex p-1 m-1 justify-content-center">
+            <a href="#donate">Donate</a>
+          </span>
+        </div>
+        <div id="toggleBlock" class="mh-100 d-flex flex-row justify-content-center pos-relative" style="min-width: 64px;">
+          <label for="toggleInfo" class="border-bottom arrow-left pos-relative" style="color: #ccc18a; top: 32px; z-index: 2;">
+          </label>
+          <label id="expandLabel" for="toggleInfo" class="pos-absolute w-100 h-100" style="top:0; left:0;">
+          </label>
+        </div>
+      </div>
+    </section>
+    
+    
+  </body>
+</html>
